@@ -13,12 +13,28 @@
     </div>
 
     <div class="row">
+        {% if op == 1 %}
+        <div class="col"><a href="anuel" class="btn p-3 btn-info w-100 disabled">Anuel</a></div>
+        {% else %}
         <div class="col"><a href="anuel" class="btn p-3 btn-info w-100">Anuel</a></div>
-        <div class="col"><a href="almighty" class="btn p-3 btn-success w-100">Almighty</a></div>
+        {% endif %}
+
+
+        {% if op == 2 %}
+        <div class="col"><a href="almighty" class="btn p-3 btn-success w-100 disabled">Almighty</a></div>
+        {% else %}
+        <div class="col"><a href="almighty" class="btn p-3 btn-success w-100 ">Almighty</a></div>
+        {% endif %}
+
+        {% if op == 3 %}
+        <div class="col"><a href="luar" class="btn p-3 btn-warning w-100 disabled">Luar</a></div>
+        {% else %}
         <div class="col"><a href="luar" class="btn p-3 btn-warning w-100">Luar</a></div>
+        {% endif %}
+        
     </div>
 
-    {% if op == 1 %}
+    {% if op == 1 or op == 2 or op == 3 %}
     <div class="d-flex justify-content-center">
         <div class="mt-5 card text-center" >
             <img src="{% static imagen %}" class="card-img-top" width="350px" height="300px">

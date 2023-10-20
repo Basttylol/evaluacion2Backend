@@ -18,7 +18,7 @@ def anuel(request):
 
 def almighty(request):
     data={
-       "op": 1,
+       "op": 2,
         "nombre":"Almighty",
         "edad": "28 años",
         'nombrereal':"Alejandro Mosqueda Paz",
@@ -29,7 +29,7 @@ def almighty(request):
 
 def luar(request):
     data={
-        "op": 1,
+        "op": 3,
         "nombre":"Luar",
         "edad": "23 años",
         'nombrereal':"Raúl Armando Del Valle Robles",
