@@ -19,15 +19,15 @@
     </div>
 
     {% if op == 1 %}
-    <div class="row">
-        <div class="col text-center">
-            <img class="p-3 ml-5" src="{% static imagen %}" width="350px" height="300px">
-            <br />{{nombre}}
-            <br />{{edad}}
-            <br />{{nombrereal}}
-            <br />{{genero}}
-
-
+    <div class="d-flex justify-content-center">
+        <div class="mt-5 card text-center" >
+            <img src="{% static imagen %}" class="card-img-top" width="350px" height="300px">
+            <div class="card-body">
+              <h5 class="card-title">{{nombre}}</h5>
+              <p class="card-text">{{edad}}</p>
+              <p class="card-text">{{nombrereal}}</p>
+              <p class="card-text">{{genero}}</p>
+            </div>
         </div>
     </div>
     {% endif %}
