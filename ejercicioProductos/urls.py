@@ -17,10 +17,18 @@ from django.contrib import admin
 from django.urls import path
 
 from productosApp.views import *
+from evaluacion2.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",index),
     path("juguetes/",juguetes),
     path("electronica/",electronica),
     path("ropa/",ropa),
+    path("home/", home),
+    path("home/anuel",anuel),
+    path("home/almighty",almighty),
+    path("home/luar",luar),
+
+
 ]

@@ -1,11 +1,39 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluacion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
-<body>
+<body class="container mt-5">
+
+    <div class="alert alert-info display-1 text-center"> Cantantes Urbanos
+    </div>
+
+    <div class="row">
+        <div class="col"><a href="anuel" class="btn p-3 btn-info w-100">Anuel</a></div>
+        <div class="col"><a href="almighty" class="btn p-3 btn-success w-100">Almighty</a></div>
+        <div class="col"><a href="luar" class="btn p-3 btn-warning w-100">Luar</a></div>
+    </div>
+
+    {% if op == 1 %}
+    <div class="row">
+        <div class="col text-center">
+            <img class="p-3 ml-5" src="{% static imagen %}" width="350px" height="300px">
+            <br />{{nombre}}
+            <br />{{edad}}
+            <br />{{nombrereal}}
+            <br />{{genero}}
+
+
+        </div>
+    </div>
+    {% endif %}
+
+    <a href="/" class="btn btn-info mt-5">Volver</a>
+
     
 </body>
 </html>
